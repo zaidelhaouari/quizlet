@@ -1,33 +1,35 @@
 <div class="total-container">
-    <div class="topsite">
-        <header>
-        </header>
-        <h1 class="titre">
-            Liste de mots en arabe
-        </h1>
+  <div class="topsite">
+    <header>
+    </header>
+    <h1 class="titre">
+      Liste de mots en arabe
+    </h1>
+  </div>
+  <div class="container">
+
+    <div class="carte" (click)="tourner()">
+        <p class='{{"mot " +  (this.estCeQueJafficheEnArabe? " " :"hidden")}}'>
+          {{this.liste[this.index].arabe}}
+        </p>
+
+        <p class='{{"mot " + (!this.estCeQueJafficheEnArabe? " " :"hidden")}}'>
+          {{this.liste[this.index].francais}}
+        </p>
     </div>
-    <div class="container">
+    <div class="bouton-container">
 
-        <div class="carte">
-            <p class="mot">
-                أحبّ
-            </p>
+      <button id="boutondegauche" (click)="passerALaCarteSuivante()">
+        <div class="centering">
+          <div class="rotationdegauche"></div>
+          <div class="rotationdedroite"></div>
         </div>
-        <div class="bouton-container">
+      </button>
 
-            <button id="boutondegauche">
-                <div class="centering">
-                    <div class="rotationdegauche"></div>
-                    <div class="rotationdedroite"></div>
-                </div>
-            </button>
-
-            <button id="boutondedroite" type="button" value="vrai">
-                jjgjg
-            </button>
-
-
-        </div>
-
+      <button id="boutondedroite" type="button" value="vrai" (click)="passerALaCarteSuivante()">
+        jjgjg
+      </button>
     </div>
+
+  </div>
 </div>
