@@ -1,0 +1,102 @@
+/* .total-container{
+    width: 100%;
+    height: 100%;
+    background-color: #f6f7fb00;
+} */
+
+.carte {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    height: 375px;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 .25rem 1rem 0 #282e3e1f;
+}
+
+
+.titre {
+    text-align: center;
+    margin-top: 0%;
+}
+
+.mot {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.container {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#boutondegauche {
+    margin-right: 350px;
+    font-size: 1.4em;
+    color: #f6f7fb00;
+    border-color: #f6f7fb00;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#boutondedroite {
+    font-size: 1.4em;
+    border-color: #f6f7fb00;
+    color: #f6f7fb00;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.bouton-container {
+    margin-top: 100px;
+
+}
+
+.topsite{
+    height: 70px;
+    background-color: white;
+}
+
+.cross{
+  
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    border-radius: 50% 50%;
+    
+    position: relative;
+    transform: scale(1.3);
+    &::before{
+        position: absolute;
+        display:block;
+        content:'';
+        width: 70%;
+        height: 6%;
+        top: 47%;
+        left: 15%;
+        transform: rotate(45deg);
+    } 
+    &::after{
+        background: #888;
+        position: absolute;
+        display:block;
+        content:'';
+        width: 6%;
+        height: 70%;
+        left: 47%;
+        top: 15%;
+        transform: rotate(45deg);
+    } 
